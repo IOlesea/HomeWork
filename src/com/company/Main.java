@@ -3,37 +3,43 @@ package com.company;
 public class Main {
 
     public static void main(String... args) {
-        Triangle one = new Triangle();
-        one.lengthOne = 2;
-        one.lengthTwo = 3;
-        one.lengthThree = 5;
-        int result1 = ShapeController.trianglePerim(one);
-        System.out.println("The triangle area is: " + result1);
 
-        Rectangle two = new Rectangle();
-        two.height = 2;
-        two.width = 3;
-        int result2 = ShapeController.rectanglePerim(two);
-        System.out.println("The rectangle area is: " + result2);
+        Movie movie1 = new Movie("Matrix", 0);
+        Movie movie2 = new Movie("Avengers", 0);
+        Movie movie3 = new Movie("Spider man", 0);
+        Movie movie4 = new Movie("Batman", 0);
+        Movie movie5 = new Movie("Titanic", 0);
 
-        Circle three = new Circle();
-        three.r = 2.5;
-        double result3 = ShapeController.circleAria(three);
-        System.out.println("The circle aria is: " + result3);
+        Movie[] movies = {movie1, movie2, movie3, movie4, movie5};
+
+        MoviesController.likeMovies(movies, 7);
+        MoviesController.print(movies);
 
 
-        Triangle one1 = new Triangle();
-        one1.lengthOne = 2;
-        one1.lengthTwo = 5;
-        one1.lengthThree = 4;
-        ShapeController.modifyTriangle(one1);
-        System.out.println("The triangle area was incremented: " + one1.lengthOne + one1.lengthTwo + one1.lengthThree);
 
-        Rectangle two2 = new Rectangle();
-        two2.width = 2;
-        two2.height = 3;
-        ShapeController.modifyRectangle(two2);
-        System.out.println("The rectangle area was incremented: " + two2.height + two2.width);
+     Vote person = new Vote("Ana", "MD", 25);
+     Vote person1 = new Vote("Ion", "Moldova", 17);
+     Vote person2 = new Vote("Mia", "USA", 27);
+     person.setStatus("MD", 25);
+     person1.setStatus("MD", 17);
+     person2.setStatus("MD", 27);
+
+
+   //     Student student = new Student( "ion", 22 );
+   //     student.setName("ana");
+//     System.out.println(student.getName());
+
+        //   Triangle triangle = InputController.createTriangle();
+     //   OutputController.printAreaAndPerimeter(triangle);
+     //   Square square = InputController.createSquare();
+     //   OutputController.printAreaAndPerimeter(square);
+     //   Circle circle = InputController.createCircle();
+     //   OutputController.printAreaAndPerimeter(circle);
+
 
     }
 }
+
+
+
+
